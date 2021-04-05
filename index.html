@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Taxidermy Catalogue</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="latin name" class="primary">latin name</label>
+          <input type="text" id="title" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="common name" class="primary">common name</label>
+          <input type="text" id="author" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="category" class="primary">category</label>
+          <select id="category">
+            <option value="" disabled selected></option>
+            <option value="Antlers">Antlers</option>
+            <option value="Antlers with skull">Antlers with skull</option>
+            <option value="Horns">Horns</option>
+            <option value="Horns with skull">Horns with skull</option>
+            <option value="Skull">Skull</option>
+          </select>
+        <div class="rate">
+            <h2>rarity</h2>
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h1>Taxidermy catalogue</h1>
+    <ul id="catalogue-list"></ul>
+  </body>
+</html>
